@@ -1,11 +1,11 @@
 import React from 'react';
-import Runner from './features/runner/Runner';
+import RunnerTabs from './features/RunnerTabs';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Runner/>
+        <RunnerTabs/>
       </header>
     </div>
   );
