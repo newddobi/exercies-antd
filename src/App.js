@@ -1,14 +1,16 @@
-import React from 'react';
-import RunnerTabs from './features/RunnerTabs';
+import React, { useState } from "react";
+import AppRouter from './AppRouter';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <RunnerTabs/>
-      </header>
-    </div>
-  );
+const App = () => {
+    const [userObj, setUserObj] = useState(null);
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <AppRouter isLoggedIn={Boolean(userObj)} userObj={userObj} />
+            </header>
+        </div>
+    );
 }
 
 export default App;
